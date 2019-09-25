@@ -1,5 +1,4 @@
 import template from './templates/template.html';
-import cardTemplate from './templates/card.html';
 import Utils from './Util'
 
 const templateEl = document.createElement('div');

@@ -45,4 +45,4 @@ username: admin
 password: admin
 
 ## Users generator
-http://localhost:8000/users/
+http://localhost:8000/

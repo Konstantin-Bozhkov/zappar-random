@@ -49,7 +49,6 @@ export class UserGenerator extends HTMLElement {
         data.append('nationality',(<HTMLInputElement>document.getElementById('nationality')).value)
         data.append('results',(<HTMLInputElement>document.getElementById('results')).value)
         
-    
         xhttp.onprogress = function () {
             console.log('LOADING...', xhttp.readyState);
         };

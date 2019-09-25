@@ -10,8 +10,6 @@ export default class Utils {
             // get the first matching slot from the view
             var slotElement = document.querySelector(`[slot="${slotName}"`);
 
-            
-
             // About if the parent doesnt exits
             if(slot.parentNode === null) return;
 

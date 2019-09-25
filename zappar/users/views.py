@@ -7,8 +7,6 @@ from users.models import ZapparUsers
 from users.form import UsersForm
 from users.services.random_user import RandomUser
 
-
-
 class UsersView(FormView):
     template_name = 'index.html'
     form_class = UsersForm

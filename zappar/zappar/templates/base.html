@@ -7,7 +7,29 @@
     </head>
 
     <body>
+
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Zappar Random User</a>
+            </div>
+        </nav>
+
         <div class="wrapper">
+
+            <div class="jumbotron">
+               <div class="container">
+                    <h1 class="display-4">Hello, Zappar!</h1>
+                    <p class="lead">This is a simple app build with Django and custom web components with Typescript.</p>
+                    <hr class="my-4">
+                    <p class="lead">
+                        <strong>Email:</strong> <a href="mailto:konstantin.bozhkov@yahoo.com" role="button">konstantin.bozhkov@yahoo.com</a>
+                    </p>
+                    <p class="lead">
+                        <strong>Tel:</strong> <a href="tel:+44 75 46 86 7968">+44 75 46 86 7968</a>
+                    </p>
+               </div>
+            </div>
+                
             {% block content %}{% endblock content %}
         </div>
 

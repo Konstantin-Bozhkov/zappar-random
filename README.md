@@ -1,6 +1,8 @@
 # Zappar Random User Generation - Python 3.6
 
-The application has been build with Python with Django framework and Typescript without a use of any external libraries or frameworks like jQuery or AngularJS
+The application has been build with Python with Django framework and Typescript without a use of any external libraries or frameworks like Angular, React or VueJS.
+
+The main idea behind the <user-generator> component has been inspired by VueJS components and slot functionality.
 
 # Installation
 

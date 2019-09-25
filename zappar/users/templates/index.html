@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Random User Generator{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/users.css' %}">
+{% endblock css %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <user-generator z-csrf={{csrf_token}}>
+                 <!-- Start form -->
+                <form method="post" action="javascript:void(0);" slot="form">
+                    <div class="form-group">
+                        <label for="{{ form.fields.gender.widget.attrs.id }}">{{ form.gender.label }} </label>
+                        {{ form.gender }}
+                    </div>
+                    <div class="form-group">
+                        <label for="{{ form.fields.nationality.widget.attrs.id }}">{{ form.nationality.label }} </label>
+                        {{ form.nationality }}
+                    </div>
+                    <div class="form-group">
+                        <label for="{{ form.fields.results.widget.attrs.id }}">{{ form.results.label }} </label>
+                        {{ form.results }}
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" id="generateBtn">Generate</button>
+                    </div>                    
+                </form>
+            </user-generator>
+            
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+
+
+{% block javascript %}
+<script src="{% static 'js/users.js' %}"></script>
+{% endblock javascript %}
+
+

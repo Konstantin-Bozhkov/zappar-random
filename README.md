@@ -23,7 +23,7 @@ npm install
 
 5. Make migrations and install
 
-### migration files has been included but for first time installation will be better
+### migration files has been included but for first time installation probably will be better to start with a fresh DB
 
 python manage.py makemigrations
 
@@ -36,3 +36,13 @@ python manage.py runserver
 7. Run webpack development
 
 npm run start
+
+
+## Admin page creds
+
+username: admin
+
+password: admin
+
+## Users generator
+http://localhost:8000/users/
